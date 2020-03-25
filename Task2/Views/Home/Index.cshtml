@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+@model Task2.Models.Product
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Product</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <table border="1" cellpadding="5">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <th>@Model.ID</th>
+                <th>@Model.Name</th>
+                <th>@Model.Price</th>
+                <th>@Model.Description</th>
+            </tr>
+    </table>
+</body>
+</html>

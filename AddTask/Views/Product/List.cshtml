@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+@model  IEnumerable<Task2.Models.Product>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List</title>
+</head>
+<body>
+    <div>
+        <table border="1" title="Title">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+            @{
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <th>@item.ID</th>
+                        <th>@item.Name</th>
+                        <th>@item.Price</th>
+                        <th>@item.Description</th>
+
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+</body>
+</html>

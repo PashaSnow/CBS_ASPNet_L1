@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        @{
+            switch (new Random(Guid.NewGuid().GetHashCode()).Next(1, 5))
+            {
+                case 1:
+                    <p>Details 1</p>
+                    break;
+                case 2:
+                    <p> Details 2 </p>
+                    break;
+                case 3:
+                    <p> Details 3 </p>
+                    break;
+                default:
+                    <p> default details</p>
+                    break;
+
+            }
+        }
+    </div>
+</body>
+</html>
